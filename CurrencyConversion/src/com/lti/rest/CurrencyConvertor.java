@@ -14,7 +14,8 @@ public class CurrencyConvertor
 	@Produces(MediaType.TEXT_HTML)
 	public String rsToDollar(@PathParam("rs") double rs)
 	{
-		double d=rs/75;
+		double d=rs/85;
+		System.out.println("Code Modified on 25/07/2019");
 		return "<h1>"+rs+"/Rs. Dollar="+d+"</h1>";
 	}
 	
